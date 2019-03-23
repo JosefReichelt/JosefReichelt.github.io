@@ -1,0 +1,33 @@
+{
+  "name": "jr-github-io-site",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://josefreichelt.github.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JosefReichelt/JosefReichelt.github.io"
+  },
+  "dependencies": {
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "react-scripts": "2.1.8"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "deploy": "yarn build && gh-pages -d build -b master"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
