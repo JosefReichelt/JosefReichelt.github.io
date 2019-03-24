@@ -1,0 +1,23 @@
+.SocialBar{
+  border: 2px dashed #ececec;
+  border-radius: 2vh;
+  height: 5vh;
+  
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.SocialButton{
+  color:black;
+}
+
+.SocialButton:hover {
+  color: red;
+}
+
+.SocialButton img{
+  height: 5vh;
+}

@@ -1,0 +1,14 @@
+.Title {
+  font-family: Libby Heavy;
+  font-size: 5vh;
+  display: flex;
+  justify-content: center;
+}
+
+.Subtitle{
+  display: flex;
+  justify-content: center;
+  font-family: Roboto-Thin;
+  font-size: 2vh;
+  margin-top: -4vh;
+}
