@@ -12,7 +12,7 @@ export class SocialButton extends Component {
 
   switchImage = () => {
     let img = {};
-    let lnk = "Boobs";
+    let lnk = "";
     switch (this.props.name) {
       case "twitter":
         img = twitter;
@@ -48,7 +48,7 @@ export class SocialButton extends Component {
   render() {
     let switched = this.switchImage();
     return (
-      <a href={switched.link} target="_blank" rel="noopener noreferrer" className={styl.SocialButton}><img alt={this.props.name} src={switched.image} /></a>
+      <a href={switched.link} target="_blank" rel="noopener noreferrer" ><img alt={this.props.name} src={switched.image} className={styl.SocialButton} /></a>
     )
   }
 }

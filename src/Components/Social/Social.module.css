@@ -1,6 +1,6 @@
 .SocialBar{
-  border: 2px dashed #ececec;
-  border-radius: 2vh;
+  
+  
   height: 5vh;
   
   position: absolute;
@@ -11,13 +11,12 @@
 }
 
 .SocialButton{
-  color:black;
-}
-
-.SocialButton:hover {
-  color: red;
-}
-
-.SocialButton img{
+  margin: 0px 0.5vw 0px 0.5vh;
   height: 5vh;
+  transition: height .15s, transform .15s;
+  transition-timing-function: ease-out;
+}
+.SocialButton:hover{
+   height: 10vh;
+   transform: translateY(-5vh);
 }
