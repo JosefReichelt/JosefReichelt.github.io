@@ -1,13 +1,13 @@
 .SocialBar{
-  
-  
+  clear: both;
   height: 5vh;
-  
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  position: fixed;
+  bottom: 1vh;
+  width: 100%;
   display: flex;
+  flex-basis: 100%;
   flex-direction: row-reverse;
+  justify-content: center;
 }
 
 .SocialButton{

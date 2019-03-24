@@ -1,0 +1,16 @@
+.PageBackground{
+  border: 2px dashed #A3A3A3;
+  min-height: 80vh;
+}
+
+.PageBlock{
+  margin: auto;
+  border: 2px dashed #ececec;
+  width: 70vw;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+.PageBlock img{
+  float: left;
+}

@@ -10,7 +10,7 @@ export class Title extends Component {
           Josef Reichelt
         </h1>
         <h2 className={styl.Subtitle}>
-          aspiring game developer
+          aspirující vývojář
         </h2>
       </header>
     )
