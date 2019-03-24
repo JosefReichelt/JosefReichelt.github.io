@@ -1,0 +1,37 @@
+.PageBackground{
+  border: 2px dashed #A3A3A3;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+.PageBlock{
+  margin: auto;
+  border: 2px dashed #ececec;
+  width: 90vw;
+  min-height: 70vh;
+  clear: both;
+}
+.PageBlock img{
+  float: left;
+  margin: 2vw;
+  height: 15vw;
+}
+.PageBlock div{
+  clear: both;
+}
+.PageBlock p{
+  font-size: 2vh;
+}
+.PageBlock h1{
+  font-size: 4vw;
+}
+.About{
+  background-color: #5C99D6;
+}
+.Games{
+  background-color: #1DCABC;
+}
+.Projects{
+  background-color: #1DCA57;
+}

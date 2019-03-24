@@ -5,7 +5,7 @@ export class Title extends Component {
 
   render() {
     return (
-      <header >
+      <header className={styl.Header} >
         <h1 className={styl.Title}>
           Josef Reichelt
         </h1>
