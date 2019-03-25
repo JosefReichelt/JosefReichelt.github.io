@@ -6,7 +6,7 @@ export class TechList extends Component {
     let listItems = this.props.items;
     listItems = listItems.map((item, key) => {
       return (
-        <li key="key">{item}</li>
+        <li key={key}>{item}</li>
       )
     });
     return listItems;

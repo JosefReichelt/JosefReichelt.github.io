@@ -2,17 +2,19 @@
   clear: both;
   height: 5vh;
   position: fixed;
-  bottom: 1vh;
+  bottom: 0vh;
   width: 100%;
   display: flex;
+  padding-top: 2vh;
   flex-basis: 100%;
   flex-direction: row-reverse;
   justify-content: center;
-  
+  background-color: #111A22;
 }
 
 .SocialButton{
-  
+  position: relative;
+  bottom: 1vh;
   margin: 0px 0.5vw 0px 0.5vh;
   height: 5vh;
   transition: height .15s, transform .15s;

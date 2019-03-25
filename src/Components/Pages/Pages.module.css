@@ -8,7 +8,7 @@
 .PageBlock{
   
   /*border: 2px dashed #ececec;*/
-  width: 90vw;
+  width: 60vmax;
   min-height: 70vh;
   clear: both;
 }
@@ -35,7 +35,7 @@
 }
 .PageBlock a {
     font-family: "Roboto-Light";
-    font-size: calc(1vh + 1vw);
+    font-size: 2vmax;
     color: #ececec;
     text-decoration: none;
     transition: font-size .15s;
@@ -43,7 +43,7 @@
 }
 .PageBlock a:hover{
   color: white;
-  font-size: calc(1.2vh + 1.2vw);
+  font-size: 2.5vmax;
   text-decoration: underline;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .PageBlock ul{
-  font-size: calc(1vh + 1vw);
+  font-size: 4vmin;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
