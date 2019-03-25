@@ -3,7 +3,7 @@ import styl from "./Pages.module.css";
 import ProjectEntry from "./ProjectEntry";
 import castleImg from "../../images/projects/brickthecastle.png";
 import pacmanImg from "../../images/projects/sheriffpac.png";
-
+import stamperImg from "../../images/projects/stamperman.jpg";
 
 export class GamesPage extends Component {
   render() {
@@ -13,16 +13,26 @@ export class GamesPage extends Component {
           <h1>Hry které jsem vytvořil</h1>
           <ProjectEntry
             name="Brick the Castle"
-            info="Jednoduchy breaker clone \n
-            Zahrát si to můžete zde:"
+            info="Jedná se o klon klasického Arkanoidu/Brick Breakeru s tím že jsem udělal pár úprav.
+            Je možné si vybrat kam na začátku vystřelíte míč a  &quot;pálkou&quot; se dá hýbat po obou osách. 
+            \n Hra beží v Unity a byla vytvořena během 72 hodin pro GameJam.
+            \n Zahrát si to můžete zde:"
             link="https://protomace.itch.io/brick-the-castle"
             img={castleImg} />
           <ProjectEntry
-            name="Pacman"
-            info="Jednoduchy pacman clone"
+            name="Sheriff Pac"
+            info="Klon pacmana, kde místo toho aby jste po powerupu mohly duchy sníst sbíráte náboje a duchy sestřelíte.
+            Největším oříškem byla navigace pro hráče a nepřátele. Co jsem nakonec udělal byla hrubá kopie levelu v 3D a použil jsem Navmesh. V podstatě tak existovaly 2 verze jedné úrovně.
+            \n Hra beží v Unity a byla vytvořena během 72 hodin pro GameJam, bohužel je nedodělána a chybí zvuky, protože jsem již poslední den neměl čas.
+            \n Zahrát si to můžete zde:"
             img={pacmanImg}
+            link="https://protomace.itch.io/sheriff-pac"
+          /> 
+          <ProjectEntry
+            name="Stamperman"
+            info="VR hra"
+            img={stamperImg}
           />
-
         </div>
       </div>
     )
