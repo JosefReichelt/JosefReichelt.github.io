@@ -9,12 +9,12 @@ body{
 
 
 @font-face{
-  font-family: Libby Heavy;
+  font-family: "Libby Heavy";
   src: url(./Fonts/LibbyHeavy.ttf);
   
 }
 
 @font-face{
-  font-family: Roboto-Thin;
+  font-family: "Roboto-Light";
   src: url(./Fonts/Roboto-Thin.ttf);
 }

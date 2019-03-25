@@ -19,7 +19,7 @@ export class GameEntry extends Component {
       console.log("No Link provided in ProjectEntry");
     } else {
       return (
-        <a href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.name}</a>
+        <a href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.linkName}{this.props.name}</a>
       )
     }
   }

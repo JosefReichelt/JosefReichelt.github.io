@@ -17,7 +17,7 @@
 .Subtitle{
   display: flex;
   justify-content: center;
-  font-family: Roboto-Thin;
+  font-family: "Roboto-Light";
   font-size: calc(1vh + 1vw);
   margin-top: calc(-2vh - 2vw);
 }

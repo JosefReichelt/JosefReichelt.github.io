@@ -6,26 +6,47 @@
 }
 
 .PageBlock{
-  margin: auto;
+  
   border: 2px dashed #ececec;
   width: 90vw;
   min-height: 70vh;
   clear: both;
 }
 .PageBlock img{
+  object-fit: cover;
   float: left;
   margin: 2vw;
   height: 15vw;
+  width: 15vw;
+
 }
 .PageBlock div{
   clear: both;
+  padding-top: 4vh;
 }
 .PageBlock p{
   font-size: 2vh;
+  text-align: justify;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
 .PageBlock h1{
   font-size: 4vh;
 }
+.PageBlock a {
+    font-family: "Roboto-Light";
+    font-size: calc(1vh + 1vw);
+    color: #ececec;
+    text-decoration: none;
+    transition: font-size .15s;
+    transition-timing-function: ease-out;
+}
+.PageBlock a:hover{
+  color: white;
+  font-size: calc(1.2vh + 1.2vw);
+  text-decoration: underline;
+}
+
 
 .About{
   background-color: #5C99D6;
