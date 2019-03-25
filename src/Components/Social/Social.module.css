@@ -8,9 +8,11 @@
   flex-basis: 100%;
   flex-direction: row-reverse;
   justify-content: center;
+  
 }
 
 .SocialButton{
+  
   margin: 0px 0.5vw 0px 0.5vh;
   height: 5vh;
   transition: height .15s, transform .15s;
