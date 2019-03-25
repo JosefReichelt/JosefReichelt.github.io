@@ -14,7 +14,7 @@ class App extends Component {
 
       <div className="App">
         <Title />
-        <div style={{ width: "100%", height: "10vh" }}>NAVIGACE</div>
+        <div style={{ width: "100%", height: "10vh" }}></div>
         <AboutPage />
         <GamesPage />
         <ProjectsPage />

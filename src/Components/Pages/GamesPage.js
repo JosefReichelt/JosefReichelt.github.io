@@ -13,9 +13,10 @@ export class GamesPage extends Component {
           <h1>Hry které jsem vytvořil</h1>
           <ProjectEntry
             name="Brick the Castle"
-            info="Jednoduchy breaker clone"
-            img={castleImg}
-          />
+            info="Jednoduchy breaker clone \n
+            Zahrát si to můžete zde:"
+            link="https://protomace.itch.io/brick-the-castle"
+            img={castleImg} />
           <ProjectEntry
             name="Pacman"
             info="Jednoduchy pacman clone"
