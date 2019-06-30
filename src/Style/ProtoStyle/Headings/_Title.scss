@@ -1,0 +1,21 @@
+@import "../Globals/Colors";
+@import "../Layout/Flex";
+
+.Title-Main {
+  @extend .Flex;
+  color: map-get($ProtoColorsBase, "Black");
+
+  h1,
+  h2 {
+    margin: 0;
+    margin-left: 5rem;
+    font-size: 1rem;
+  }
+  img{
+    align-self: center;
+    justify-self: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 5rem;
+  }
+}

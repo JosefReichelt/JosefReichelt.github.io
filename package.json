@@ -8,21 +8,21 @@
     "url": "https://github.com/JosefReichelt/JosefReichelt.github.io"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
-    "reactstrap": "^8.0.0"
+    "react-transition-group": "^4.2.0"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.12.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "deploy": "yarn build && gh-pages -d build -b master"
+    "deploy": "npm run build && gh-pages -d build -b master"
   },
   "eslintConfig": {
     "extends": "react-app"

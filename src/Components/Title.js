@@ -1,17 +1,22 @@
 import React, { Component } from 'react'
-import styl from "./Title.module.css";
+import logo from '../images/logoMono.svg'
 
 export class Title extends Component {
 
   render() {
     return (
-      <header className={styl.Header} >
-        <h1 className={styl.Title}>
-          Josef Reichelt
+      <header className="Title-Main">
+        
+        <div>
+          <h1>
+            Josef Reichelt
         </h1>
-        <h2 className={styl.Subtitle}>
-          aspirující vývojář
+          <h2>
+            Aspirující vývojář, designer a game maker
         </h2>
+        </div>
+        <img src={logo} alt="JR Logo"/> 
+        
       </header>
     )
   }
