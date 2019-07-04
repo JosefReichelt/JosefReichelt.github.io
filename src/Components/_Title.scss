@@ -1,0 +1,33 @@
+@import "../Style/ProtoStyle/Globals/Colors";
+
+.Title-Main {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  color: map-get($ProtoColorsBase, "Black");
+  
+  div {
+  
+    display: inherit;
+    flex-direction: column;
+    justify-content: end;
+    h1,
+    h2 {
+      font-weight: 100;
+      margin: 0;
+      font-size: 1.2rem;
+      letter-spacing: -0.06rem;
+    }
+    h1{
+      font-weight: 400;
+    }
+  }
+  img {
+    align-self: center;
+    justify-self: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 5rem;
+    padding-right: 15rem;
+  }
+}

@@ -1,9 +1,16 @@
-@import './Colors.scss';
+@import "./Colors.scss";
 
-body{
-  background-color: map-get($ProtoColorsHighlights,"White");
+body {
+  background-color: map-get($ProtoColorsHighlights, "White");
   margin: 0;
   padding: 0;
   width: 100vw;
   height: 100vh;
+
+  .App {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
 }

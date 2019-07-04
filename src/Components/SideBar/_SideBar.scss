@@ -1,0 +1,54 @@
+@import "../../Style/ProtoStyle/Globals/Colors";
+
+.SideBar {
+  grid-column: 2 / span 3;
+  background-color: map-get($ProtoColorsBase, "Black");
+  color: map-get($ProtoColorsBase, "White");
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  @extend .ProtoBorder-Left;
+  box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.2);
+
+  ul {
+    flex-grow: 1;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    list-style: none;
+    padding: 0;
+    li {
+      a {
+        color: map-get($ProtoColorsBase, "Blue");
+        text-decoration: none;
+        &:hover {
+          color: map-get($ProtoColorsHighlights, "Blue");
+        }
+      }
+    }
+  }
+
+  .SocialBar {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      li {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+
+        svg {
+          height: 2.5rem;
+
+          &:hover {
+            path {
+              fill: map-get($ProtoColorsHighlights, "Blue") !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

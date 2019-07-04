@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styl from "./Pages.module.css";
+
 import ProjectEntry from "./ProjectEntry";
 import kyberImage from "../../images/projects/kybernauts.png";
 import gamedevImage from "../../images/projects/gdcs.png";
@@ -7,8 +7,8 @@ import gamedevImage from "../../images/projects/gdcs.png";
 export class ProjectsPage extends Component {
   render() {
     return (
-      <div className={`${styl.PageBackground} ${styl.Projects}`}>
-        <div className={styl.PageBlock}>
+      <div>
+        <div >
           <h1>Projekty které jsem vytvořil nebo se zúčastnil</h1>
           <ProjectEntry
             name="Kybernauts"
