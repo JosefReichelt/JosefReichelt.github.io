@@ -38,11 +38,15 @@ export class GameEntry extends Component {
   render() {
 
     return (
-      <div>
-        {this.checkImage()}
-        <h2>{this.props.name}</h2>
-        {this.formatText()}
-        {this.checkLink()}
+      <div className="ProjectEntry">
+        <div className="Title">
+          <h3>{this.props.name}</h3>
+          {this.checkImage()}
+        </div>
+        <div className="Description">
+          {this.formatText()}
+          {this.checkLink()}
+        </div>
       </div >
     )
   }

@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
-import ProjectEntry from "./ProjectEntry";
-import castleImg from "../../images/projects/brickthecastle.png";
-import pacmanImg from "../../images/projects/sheriffpac.png";
-import stamperImg from "../../images/projects/stamperman.jpg";
+import ProjectEntry from "../ProjectEntry";
+import castleImg from "../../../images/projects/brickthecastle.png";
+import pacmanImg from "../../../images/projects/sheriffpac.png";
+import stamperImg from "../../../images/projects/stamperman.jpg";
 
 export class GamesPage extends Component {
   render() {
     return (
-      <div >
-        <div >
-          <h1>Hry které jsem vytvořil</h1>
+      <div className="GamesPage">
+          <h2>Hry které jsem vytvořil</h2>
           <ProjectEntry
             name="Brick the Castle"
             info="Jedná se o klon klasického Arkanoidu/Brick Breakeru s tím že jsem udělal pár úprav.
@@ -35,7 +34,6 @@ export class GamesPage extends Component {
             Hru jsme bohužel nedokončili protože nám došel čas, jednalo se o 48 hodinovou akci a často nás brzdily problémy s Unity."
             img={stamperImg}
           />
-        </div>
       </div>
     )
   }

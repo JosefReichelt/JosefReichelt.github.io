@@ -4,8 +4,8 @@ import './Style/Main.scss';
 import Title from "./Components/Title";
 import SideBar from './Components/SideBar/SideBar';
 import AboutPage from './Components/Pages/About/AboutPage';
-import GamesPage from './Components/Pages/GamesPage';
-import ProjectsPage from './Components/Pages/ProjectsPage';
+import GamesPage from './Components/Pages/Games/GamesPage';
+import ProjectsPage from './Components/Pages/Projects/ProjectsPage';
 
 class App extends Component {
   render() {

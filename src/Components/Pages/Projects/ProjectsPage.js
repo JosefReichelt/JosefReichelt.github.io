@@ -1,15 +1,14 @@
 import React, { Component } from 'react'
 
-import ProjectEntry from "./ProjectEntry";
-import kyberImage from "../../images/projects/kybernauts.png";
-import gamedevImage from "../../images/projects/gdcs.png";
+import ProjectEntry from "../ProjectEntry";
+import kyberImage from "../../../images/projects/kybernauts.png";
+import gamedevImage from "../../../images/projects/gdcs.png";
 
 export class ProjectsPage extends Component {
   render() {
     return (
-      <div>
-        <div >
-          <h1>Projekty které jsem vytvořil nebo se zúčastnil</h1>
+      <div className="ProjectsPage">
+          <h2>Projekty které jsem vytvořil nebo se zúčastnil</h2>
           <ProjectEntry
             name="Kybernauts"
             info="Kybernauts byl náš projekt který vznikl v době když jsem aktivně vytvářel youtube videa. Chtěli jsme dát dohromady team a společně tvořit skvělý obsah.
@@ -28,7 +27,6 @@ export class ProjectsPage extends Component {
             linkName="Discord server "
             img={gamedevImage} 
             />
-        </div>
       </div>
     )
   }
