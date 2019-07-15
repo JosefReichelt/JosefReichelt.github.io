@@ -1,7 +1,10 @@
-@import './ProtoStyle/ProtoStyle';
+@import "./Globals/index";
+@import "./Globals/Animations";
+@import "./Components/Border";
 @import "../Components/Title";
 @import "../Components/SideBar/SideBar";
 @import "../Components/Pages/About/AboutPage";
 @import "../Components/Pages/Projects/ProjectsPage";
 @import "../Components/Pages/ProjectEntry";
 @import "../Components/Pages/Games/GamesPage";
+@import "../Components/Footer/Footer";

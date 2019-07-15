@@ -1,54 +1,73 @@
-@import "../../Style/ProtoStyle/Globals/Colors";
+@import "../../Style/Globals/Colors";
 
 .SideBar {
-  grid-column: 2 / span 3;
-  background-color: map-get($ProtoColorsBase, "Black");
-  color: map-get($ProtoColorsBase, "White");
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 15rem;
+  background-color: rgba(map-get($ProtoColorsBase, "Blue"), 0.9);
+  color: map-get($ProtoColorsBase, "Black");
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1000;
-  @extend .ProtoBorder-Left;
+  z-index: 5;
   box-shadow: -10px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  transform: translate3d(100%,0,0);
+  opacity: 0;
+  @include easeOut();
 
   ul {
     flex-grow: 1;
     margin-top: 5rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 2;
     list-style: none;
     padding: 0;
     li {
       a {
-        color: map-get($ProtoColorsBase, "Blue");
+        color: map-get($ProtoColorsBase, "White");
         text-decoration: none;
         &:hover {
-          color: map-get($ProtoColorsHighlights, "Blue");
+          color: map-get($ProtoColorsHighlights, "White");
         }
       }
     }
   }
 
-  .SocialBar {
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 0;
-      li {
-        padding-left: 0.2rem;
-        padding-right: 0.2rem;
+  svg{
+    margin-top: 3rem;
+    height: 5rem;
+    path{
+      fill: map-get($ProtoColorsBase, "White") !important;
+    }
+  }
 
-        svg {
-          height: 2.5rem;
 
-          &:hover {
-            path {
-              fill: map-get($ProtoColorsHighlights, "Blue") !important;
-            }
-          }
-        }
-      }
+  &.show{
+    transform: translate3d(0,0,0);
+    opacity: 1;
+    @include easeOut();
+  }
+
+  &Button {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    z-index: 6;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    font-size: 2rem;
+    color: map-get($ProtoColorsBase,"Black");
+
+    @include easeOut();
+    
+    &.show {
+      @include easeOut();
+      color: map-get($ProtoColorsBase,"White");
+      transform: translate(1px,5px) rotate(90deg);
     }
   }
 }

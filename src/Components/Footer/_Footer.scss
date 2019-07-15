@@ -1,0 +1,33 @@
+footer{
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+
+  .SocialBar {
+    ul {
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      li {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+
+        svg {
+          height: 2.5rem;
+          path{
+            @include easeOut();
+            fill: map-get($ProtoColorsBase, "Black" ) !important;
+          }
+          &:hover {
+            path {
+              @include easeOut();
+              fill: map-get($ProtoColorsHighlights, "Blue") !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

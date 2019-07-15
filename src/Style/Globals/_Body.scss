@@ -1,0 +1,26 @@
+@import "./Colors.scss";
+
+body {
+  background-color: map-get($ProtoColorsHighlights, "White");
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .Main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80vw;
+      height: 100vh;
+    }
+  }
+  overflow: hidden;
+}
+*{
+  box-sizing: border-box;
+}
