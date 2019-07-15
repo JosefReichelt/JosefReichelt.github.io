@@ -6,7 +6,7 @@ export class GameEntry extends Component {
   // Disables image if none is provided in props
   checkImage = () => {
     if (this.props.img == null) {
-      console.log("No Image Provided in ProjectEntry");
+      //  console.log("No Image Provided in ProjectEntry");
     } else {
       return (
         <img src={this.props.img} alt={this.props.name} />
@@ -16,10 +16,12 @@ export class GameEntry extends Component {
   /// Disables link if none is provided in props
   checkLink = () => {
     if (this.props.link == null) {
-      console.log("No Link provided in ProjectEntry");
+      // console.log("No Link provided in ProjectEntry");
     } else {
       return (
-        <a href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.linkName}{this.props.name}</a>
+        <div className="Links">
+          <a href={this.props.link} target="_blank" rel="noopener noreferrer">{this.props.linkName}{this.props.name}</a>
+        </div>
       )
     }
   }
@@ -39,14 +41,16 @@ export class GameEntry extends Component {
 
     return (
       <div className="ProjectEntry">
-        <div className="Title">
-          <h3>{this.props.name}</h3>
-          {this.checkImage()}
+        <div className="Card">
+          <div className="Title">
+            <h3>{this.props.name}</h3>
+            {this.checkImage()}
+          </div>
+          <div className="Description">
+            {this.formatText()}
+          </div>
         </div>
-        <div className="Description">
-          {this.formatText()}
-          {this.checkLink()}
-        </div>
+        {this.checkLink()}
       </div >
     )
   }

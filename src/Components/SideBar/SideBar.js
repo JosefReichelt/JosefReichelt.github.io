@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../images/logoMono.svg';
-
+import CopyrightNotice from './CopyrightNotice';
 
 class SideBar extends Component {
 
@@ -40,7 +40,7 @@ class SideBar extends Component {
           <li><Link to="/projects">Projekty</Link></li>
           <li><Link to="/games">Hry</Link></li>
         </ul>
-
+        <CopyrightNotice/>
       </div>
     )
   }

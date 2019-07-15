@@ -3,23 +3,29 @@ import photo from "../../../images/foto.jpg";
 import TechList from "./TechList";
 
 export class AboutPage extends Component {
+
+  componentDidMount(){
+    this.props.hideMenu();
+  }
+
+
   render() {
     return (
       <div className="AboutPage">
 
         <div className="Headline">
-          <h4>Pár informací o mně</h4>
           <img src={photo} alt="my face" />
+          <i>Web developer, designer, game maker</i>
         </div>
 
         <div className="Info">
+          <h1>Josef Reichelt</h1>
           <p>
-            Jmenuji se Josef Reichelt, je mi 26 let a jsem nadšenec do her, vývoje her a software.
+            Jsem nadšenec do vývoje her a software. Vyzkoušel jsem spousty různých technologií a postupů a zajímám se i o nově příchozí technologie.
           </p>
           <p>
-            Technologíí jsem byl vždy obklopen a rád jsem se jí zabýval. V současné chvíli kromě zlepšování front-end skillů zkoumám programovací jazyk Rust.
+            V současné chvíli se specializuji na vývoj front-endu v Reactu a také zkoumám programovací jazyk Rust.
           </p>
-          <p>Také jsem velký fanda Star Wars, Lega a velice rád poslouchám soundtracky z her a filmů.</p>
         </div>
 
 

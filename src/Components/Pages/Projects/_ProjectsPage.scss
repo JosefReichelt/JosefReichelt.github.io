@@ -1,8 +1,27 @@
-.ProjectsPage{
+.ProjectsPage {
   display: flex;
   flex-direction: column;
+  justify-items: center;
   align-items: center;
-  h2{
+  .Projects {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include mediaLarge() {
+      grid-row-gap: 5rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mediaMedium() {
+      grid-row-gap: 5rem;
+      grid-template-columns: 1fr;
+    }
+  }
+  text-align: center;
+  h2 {
     margin-top: 5rem;
+  }
+  @include mediaMedium() {
+    padding-bottom: 30vh;
   }
 }
