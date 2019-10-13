@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../images/logoMono.svg';
+import Logo from '../../images/logoMono.svg';
 import CopyrightNotice from './CopyrightNotice';
 
 class SideBar extends Component {

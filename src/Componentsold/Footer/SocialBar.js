@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-import { ReactComponent as Artstation } from "../../images/artstationMono.svg";
-import { ReactComponent as Email } from "../../images/emailMono.svg";
-import { ReactComponent as Github } from "../../images/githubMono.svg";
-import { ReactComponent as Sketchfab } from "../../images/sketchfabMono.svg";
-import { ReactComponent as Twitter } from "../../images/twitterMono.svg";
+import  Artstation  from "../../images/artstationMono.svg";
+import  Email from "../../images/emailMono.svg";
+import  Github  from "../../images/githubMono.svg";
+import  Sketchfab  from "../../images/sketchfabMono.svg";
+import  Twitter  from "../../images/twitterMono.svg";
 
 export class SocialBar extends Component {
 
