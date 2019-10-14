@@ -1,0 +1,29 @@
+.navigation {
+  position: sticky;
+}
+
+.navigation__title {
+  padding: 0 3rem;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.navigation__links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.navigation__links li {
+  margin: 0 1rem;
+}
+
+.navigation__links li a {
+  text-decoration: none;
+  transition: all 0.25s ease-out;
+  color: rgb(240, 240, 240);
+}
+
+.navigation__links li a:hover {
+  transition: all 0.25s ease-out;
+  color: rgb(60, 120, 245);
+}
