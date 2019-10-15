@@ -7,9 +7,8 @@ export class Navigation extends Component {
       <div className="navigation">
         <h1 className="navigation__title">JOSEF REICHELT</h1>
         <ul className="navigation__links">
-          <li><HashLink smooth to="#informace" >informace</HashLink></li>
-          <li><HashLink smooth to="#projekty" >projekty</HashLink></li>
-          <li><HashLink smooth to="#hry" >hry</HashLink></li>
+          <li><HashLink smooth to="#info" >informace</HashLink></li>
+          <li><HashLink smooth to="#projects" >projekty</HashLink></li>
         </ul>
       </div>
     );

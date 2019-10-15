@@ -25,14 +25,14 @@ export class About extends Component {
 
   render() {
     return (
-      <div className="about-me" id="informace">
+      <div className="about-me" id="info">
         <div className="about-me__face">
           <img src={photo} alt="my face" />
           <i>agilní front-end vývojář a game-dev</i>
         </div>
         <div className="about-me__desc">
           <p>
-            Jsem velký nadšenec do vývoje software a her. Vyzkoušel jsem spousty různých technologií a postupů a stále se zajímám i o nově příchozí technologie.
+            Jsem velký nadšenec do vývoje software a her. Vyzkoušel jsem spousty různých technologií a postupů a stále se zajímám o nově příchozí technologie.
             V současné chvíli se specializuji na vývoj front-endu v Reactu a vývoji her v Unity.
           </p>
         </div>
