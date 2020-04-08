@@ -1,0 +1,13 @@
+@import "styles/imports.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    font-family: var(--fonts);
+    height: 500rem;
+}

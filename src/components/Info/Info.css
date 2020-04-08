@@ -1,0 +1,28 @@
+.info {
+    margin-top: 20rem;
+    display: flex;
+    justify-content: center;
+}
+
+.info>div {
+    padding: 2rem;
+}
+
+.imageSection img {
+    border-radius: 100%;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.textSection {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 5rem;
+    max-width: 60rem;
+}
+
+.textSection span {
+    text-align: justify;
+    margin-bottom: 4rem;
+}
