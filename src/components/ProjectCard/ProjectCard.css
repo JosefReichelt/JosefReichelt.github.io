@@ -64,6 +64,7 @@
     height: 2rem;
     width: 2rem;
 }
+
 .cardLink svg {
     margin: auto;
     transform: scale(0.9);
@@ -81,4 +82,19 @@
 
 .cardLink svg:hover path {
     fill: var(--color-primary-hover);
+}
+
+@media (max-width: 425px) {
+    .card{
+        width: 100%;
+        min-height: 30rem;
+        border-radius: 0;
+    }
+    .cardBody{
+        align-items: center;
+        flex-direction: column;
+    }
+    .cardLinks{
+        margin-top: 2rem;
+    }
 }

@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server",
     "start": "serve ./dist/ -l 3000",
     "version": "npm run build  && git add -A",
-    "postversion": "git push && git push --tags && gh-pages -d dist"
+    "postversion": "git push && git push --tags && gh-pages -d dist -b master"
   },
   "author": "Josef Reichelt",
   "license": "ISC",

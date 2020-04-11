@@ -7,3 +7,9 @@
     justify-items: center;
     align-items: center;
 }
+
+@media (max-width: 425px) {
+    .projects{
+        grid-template-columns: repeat( auto-fit, minmax(30rem, 1fr));
+    }
+}

@@ -18,7 +18,7 @@ export const ProjectsCard = (project: Project): TemplateResult => html`
                 <span>
                     ${project.desc}
                 </span>
-                <div>
+                <div class=${style.cardLinks}>
                     ${project.tech.map(t => html`
                         <span class=${style.cardTechBubble}> 
                             ${t}

@@ -9,4 +9,5 @@ body {
     background-color: var(--color-white);
     color: var(--color-text);
     font-family: var(--fonts);
+    padding-bottom: 10rem;
 }
