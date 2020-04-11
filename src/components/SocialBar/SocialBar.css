@@ -1,12 +1,17 @@
 .socialBar {
-    height: 5rem;
+    padding: 0.5rem;
     display: flex;
 }
 
-.socialBar svg {
+.socialBar a {
+    display: block;
+    margin: 0 0.3rem;
     width: 5rem;
     height: 5rem;
-    margin: 0 0.25rem;
+}
+
+.socialBar svg {
+    margin: auto;
     transform: scale(0.9);
     transition: 0.25s all ease-out;
 }

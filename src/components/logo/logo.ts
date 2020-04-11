@@ -1,7 +1,7 @@
-import { TemplateResult, svg } from "lit-html";
+import { svg, SVGTemplateResult } from "lit-html";
 
 
-export const brandLogo: TemplateResult = svg`
+export const brandLogo: SVGTemplateResult = svg`
     <svg width="64" height="64" viewBox="0 0 512 513" version="1.1" 
         xmlns="http://www.w3.org/2000/svg" 
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -11,8 +11,8 @@ export const brandLogo: TemplateResult = svg`
     </svg>
 `;
 
-export const emailLogo: TemplateResult = svg`
-    <svg width="100%" height="100%" viewBox="0 0 33 33" version="1.1" 
+export const emailLogo: SVGTemplateResult = svg`
+    <svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" 
         xmlns="http://www.w3.org/2000/svg" 
         xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
         style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
@@ -20,8 +20,8 @@ export const emailLogo: TemplateResult = svg`
     </svg>
 `;
 
-export const githubLogo: TemplateResult = svg`
-    <svg width="100%" height="100%" viewBox="0 0 33 33" version="1.1" 
+export const githubLogo: SVGTemplateResult = svg`
+    <svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" 
         xmlns="http://www.w3.org/2000/svg" 
         xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
         style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
@@ -29,8 +29,8 @@ export const githubLogo: TemplateResult = svg`
     </svg>
 `;
 
-export const artstationLogo: TemplateResult = svg`
-    <svg width="100%" height="100%" viewBox="0 0 33 33" version="1.1" 
+export const artstationLogo: SVGTemplateResult = svg`
+    <svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" 
         xmlns="http://www.w3.org/2000/svg" 
         xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" 
         style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
@@ -38,11 +38,31 @@ export const artstationLogo: TemplateResult = svg`
     </svg>
 `;
 
-export const sketchfabLogo: TemplateResult = svg`
-    <svg width="100%" height="100%" viewBox="0 0 33 33" version="1.1" 
+export const sketchfabLogo: SVGTemplateResult = svg`
+    <svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" 
         xmlns="http://www.w3.org/2000/svg" 
         xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" 
         style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2">
             <path d="M24.464,21.787l-6.873,3.968l0,-8.258l6.873,-3.713l0,8.003Zm-8.168,-6.213l-8.161,-4.326l8.161,-4.712l8.163,4.712l-8.163,4.326Zm-1.229,10.179l-6.898,-3.981l0,-8.033l6.898,3.726l0,8.288Zm1.39,-25.521c-8.837,0 -16,7.164 -16,16c0,8.837 7.163,16 16,16c8.838,0 16,-7.163 16,-16c0.002,-8.836 -7.161,-16 -16,-16" />
     </svg>
+`;
+
+export const linkLogo: SVGTemplateResult = svg`
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" 
+    xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xml:space="preserve" 
+    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+        <path d="M30.812,10.744L25.079,16.478C23.495,18.061 20.928,18.061 19.345,16.478L21.521,14.301C22.421,14.539 23.417,14.316 24.123,13.611L27.945,9.788C29.001,8.733 29.001,7.021 27.945,5.966L26.034,4.054C24.979,2.998 23.267,2.998 22.212,4.054L18.389,7.877C17.683,8.583 17.461,9.579 17.699,10.479L15.522,12.655C13.939,11.072 13.939,8.505 15.522,6.922L21.256,1.187C22.839,-0.396 25.407,-0.396 26.99,1.187L30.812,5.01C32.396,6.594 32.396,9.161 30.812,10.744ZM10.744,21.256C10.216,20.728 10.216,19.872 10.744,19.345L19.345,10.744C19.873,10.216 20.728,10.216 21.256,10.744C21.784,11.272 21.784,12.128 21.256,12.655L12.655,21.256C12.127,21.784 11.272,21.784 10.744,21.256ZM7.877,18.389L4.054,22.212C2.999,23.267 2.999,24.979 4.054,26.034L5.966,27.946C7.021,29.001 8.733,29.001 9.788,27.946L13.611,24.123C14.317,23.417 14.539,22.421 14.301,21.521L16.478,19.345C18.061,20.928 18.061,23.495 16.478,25.078L10.744,30.813C9.161,32.396 6.593,32.396 5.01,30.813L1.188,26.99C-0.396,25.406 -0.396,22.839 1.188,21.256L6.921,15.522C8.505,13.939 11.072,13.939 12.655,15.522L10.479,17.699C9.579,17.461 8.583,17.684 7.877,18.389Z" />
+</svg>
+`;
+
+export const linkedInLogo: SVGTemplateResult = svg`
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" 
+xmlns="http://www.w3.org/2000/svg" 
+xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" 
+style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <path d="M16,0C7.163,0 0,7.164 0,16C0,24.836 7.163,32 16,32C24.837,32 32,24.836 32,16C32.001,7.164 24.838,0 16,0ZM11.306,23.997L8.071,23.997L8.071,13.158L11.306,13.158L11.306,23.997ZM24.154,23.997L20.929,23.997L20.929,17.974C20.929,16.295 20.349,15.455 19.189,15.455C18.629,15.455 18.169,15.677 17.807,16.122C17.445,16.566 17.264,17.131 17.264,17.815L17.264,23.997L14.029,23.997L14.029,13.158L17.264,13.158L17.264,14.873L17.305,14.873C18.076,13.553 19.199,12.893 20.673,12.893C22.994,12.893 24.154,14.382 24.154,17.36L24.154,23.997ZM9.709,11.443C9.163,11.443 8.716,11.275 8.368,10.94C8.02,10.605 7.846,10.194 7.846,9.707C7.846,9.206 8.02,8.797 8.368,8.479C8.716,8.162 9.163,8.003 9.709,8.003C10.262,8.003 10.711,8.162 11.055,8.479C11.4,8.797 11.572,9.206 11.572,9.707C11.572,10.215 11.4,10.631 11.055,10.956C10.711,11.281 10.262,11.443 9.709,11.443Z" />
+</svg>
+
 `;

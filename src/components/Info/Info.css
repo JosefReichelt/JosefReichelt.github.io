@@ -8,10 +8,17 @@
     padding: 2rem;
 }
 
+.imageSection{
+    display: flex;
+    flex-direction: column;
+}
+
 .imageSection img {
     border-radius: 100%;
     height: 20rem;
-    margin-bottom: 1rem;
+    width: 20rem;
+    margin: 0 auto 1rem;
+
 }
 
 .textSection {

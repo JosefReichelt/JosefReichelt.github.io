@@ -1,6 +1,7 @@
 import { TemplateResult, html } from "lit-html";
 import style from "./ProjectCard.css";
 import { Project } from "../../data/projects";
+import { linkLogo, githubLogo } from "../logo/logo";
 
 
 export const ProjectsCard = (project: Project): TemplateResult => html`
@@ -23,8 +24,18 @@ export const ProjectsCard = (project: Project): TemplateResult => html`
                             ${t}
                         </span>
                         `
-                        )}
-                    </div>
+                    )}
+                    ${project.link && html`
+                        <a class=${style.cardLink} href=${project.link} alt=${project.name} target="_blank">
+                            ${linkLogo}
+                        </a>
+                    `}
+                    ${project.github && html`
+                        <a class=${style.cardLink} href=${project.github} alt=${project.name} target="_blank">
+                            ${githubLogo}
+                        </a>
+                    `}
+                </div>
             </div>
         </div>
     </div>

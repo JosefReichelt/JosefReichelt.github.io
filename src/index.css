@@ -9,5 +9,4 @@ body {
     background-color: var(--color-white);
     color: var(--color-text);
     font-family: var(--fonts);
-    height: 500rem;
 }
