@@ -1,5 +1,5 @@
-postcss.config.js
-webpack*.js
+!.storybook
 dist/**/*
 build/**/*
 node_modules/**/*
+postcss.config.js

@@ -1,10 +1,11 @@
-import "./index.css";
-import { render, html } from "lit-html";
-import { Header } from "./components/Header/Header";
-import { Info } from "./components/Info/Info";
-import { Projects } from "./components/Projects/Projects";
-import { Footer } from "./components/Footer/Footer";
+import App from "./Page.svelte";
+import "./index.scss";
 
-const app: HTMLElement = document.body;
+const app = new App({
+	target: document.body,
+	props: {
+		name: 'world'
+	}
+});
 
-render(html` ${Header} ${Info} ${Projects} ${Footer}`, app);
+export default app;
