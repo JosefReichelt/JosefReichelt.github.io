@@ -5,7 +5,7 @@ import BaseConfig from './webpack.config';
 const devServerConf:WebpackDevServer.Configuration = {
     contentBase: 'src',
     compress: true,
-    port: 3000,
+    port: 1337,
     open: true,
     watchContentBase: true,
     hot: true,
