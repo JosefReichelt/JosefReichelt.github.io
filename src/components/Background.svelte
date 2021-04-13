@@ -1,39 +1,48 @@
 <script>
+  import { getRandomBackgroundColor } from "src/utils/randomBackgroundColor";
+
   import { onMount } from "svelte";
 
-  let totalHeight = window.innerHeight;
-  let totalWidth = window.innerWidth;
-  let blockPadding = 2;
-  let numOfBlocks = 2;
   const blockHeight = 400;
   const isoScaleFactor = 86.062;
-  const isoScaleFactorRemainder = 13.938;
+
+  let totalHeight = 0;
+  let totalWidth = 0;
+  let blockPadding = 0;
+  let numOfBlocks = 0;
   let isoTopMargin = 2;
 
   function calculateBlocks() {
-    numOfBlocks = Math.ceil(((totalHeight + totalWidth) / blockHeight) / 1.3) + 1;
+    numOfBlocks = Math.ceil((totalHeight + totalWidth) / blockHeight / 1.3) + 1;
     blockPadding = Math.max(
       ((totalWidth / blockHeight) *
         (blockHeight + blockHeight / isoScaleFactor)) /
         3,
       blockHeight / 3
     );
-    isoTopMargin = (blockHeight / isoScaleFactor) * (100 - isoScaleFactor - 0.838);
+    isoTopMargin =
+      (blockHeight / isoScaleFactor) * (100 - isoScaleFactor - 0.838);
   }
 
   function handleResize() {
-    totalHeight = window.innerHeight;
-    totalWidth = window.innerWidth;
+    totalHeight = document.body.scrollHeight;
+    totalWidth = Math.max(window.innerWidth, 1920);
     calculateBlocks();
   }
+
   onMount(() => {
+    totalHeight = document.body.scrollHeight;
+    totalWidth = Math.max(document.body.scrollWidth, 1920);
     calculateBlocks();
   });
 </script>
 
 <svelte:window on:resize={handleResize} />
 
-<div class="backgroundContainer">
+<div
+  class="backgroundContainer"
+  style="height:{totalHeight}px; background-color: {getRandomBackgroundColor()};"
+>
   {#each Array(numOfBlocks) as _, i}
     <div
       class="backgroundBlock"
@@ -42,20 +51,18 @@
         (numOfBlocks /
           i)});
       margin-top: {isoTopMargin}px;
-      top:-{blockPadding}px
+      top:-{blockPadding}px;
       "
-    >
-      {i + 1}
-    </div>
+    />
   {/each}
 </div>
 
 <style lang="scss">
   .backgroundContainer {
-    background-color: #23235C;
+    z-index: -10;
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
   }
   .backgroundBlock {
@@ -66,6 +73,6 @@
     width: 120%;
     left: -10%;
     top: 0;
-    opacity: 0.5;
+    opacity: 0.3;
   }
 </style>
