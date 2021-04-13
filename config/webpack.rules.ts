@@ -11,7 +11,12 @@ export const rules: RuleSetRule[] = [
             options:{
                 preprocess: sveltePreprocess({
                     scss: true,
-                })
+                }),
+                compilerOptions:{
+                    cssHash:({ hash, css, name, filename })=>{
+                        return `${name}-${hash(css)}`
+                    }
+                }
             }
         },
       },
