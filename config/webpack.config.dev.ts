@@ -6,7 +6,7 @@ const devServerConf:WebpackDevServer.Configuration = {
     contentBase: 'src',
     compress: true,
     port: 1337,
-    open: true,
+    open: false,
     watchContentBase: true,
     hot: true,
     quiet: true,

@@ -1,28 +1,15 @@
 import { resolve } from 'path';
 import { RuleSetRule } from 'webpack';
 import { ASSETS_PATH, PROJ_NAME } from './webpack.config';
-import sveltePreprocess from 'svelte-preprocess';
 
 export const rules: RuleSetRule[] = [
     {
-        test: /\.(svelte)$/,
-        use: {
-            loader: 'svelte-loader',
-            options:{
-                preprocess: sveltePreprocess({
-                    scss: true,
-                }),
-                compilerOptions:{
-                    cssHash:({ hash, css, name, filename })=>{
-                        return `${name}-${hash(css)}`
-                    }
-                }
-            }
-        },
-      },
+        test: /\.html$/,
+        use: 'html-loader'
+    },
     {
         test: /[^.test]\.ts(x)?$/,
-        use: [ 'babel-loader', 'ts-loader' ],
+        use: ['babel-loader', 'ts-loader' ],
         exclude: /node_modules/
     },
     {
@@ -76,16 +63,6 @@ export const rules: RuleSetRule[] = [
                             ]
                         }
                     },
-                ]
-            },
-            {
-                test: /\.svg$/,
-                resourceQuery: /component/,
-                use: [
-                    {
-                        loader: '@svgr/webpack',
-                        options: {}
-                    }
                 ]
             },
             {

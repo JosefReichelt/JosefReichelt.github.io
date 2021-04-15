@@ -1,8 +1,5 @@
-import App from "./App.svelte";
 import "./index.scss";
+import main from './main.html'
+import './components/BackgroundDecoration';
 
-const app = new App({
-	target: document.body,
-});
-
-export default app;
+document.body.innerHTML = main;

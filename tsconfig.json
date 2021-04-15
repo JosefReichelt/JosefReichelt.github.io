@@ -1,23 +1,23 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "commonjs",
-    "jsx": "react",
+    "target": "ES2015",
     "sourceMap": true,
     "outDir": "./build",
     "noImplicitAny": false,
     "moduleResolution": "node",
     "resolveJsonModule": true,
+    "importsNotUsedAsValues": "remove",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "_Storybook/*": [".storybook/*"],
-      "_Assets/*": ["src/assets/*"],
+      "_storybook/*": [".storybook/*"],
+      "_assets/*": ["src/assets/*"],
       "_styles/*": ["src/styles/*"]
     },
     "rootDirs": ["src", ".storybook", "config"],
-    "typeRoots": ["./src/*", "./node_modules/@types"],
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true
+    "typeRoots": ["./src/*", "./node_modules/@types"]
   },
   "include": ["./src/**/*.ts", "./src/**/*.tsx"],
   "exclude": ["**/*.test.ts"]
