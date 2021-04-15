@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <ellipse id="email" cx="15.987" cy="15.988" rx="15.987" ry="15.988" style="fill:#fff;"/>
+    <clipPath id="_clip1">
+        <ellipse cx="15.987" cy="15.988" rx="15.987" ry="15.988"/>
+    </clipPath>
+    <g clip-path="url(#_clip1)">
+        <g>
+            <rect x="3.28" y="8.497" width="25.415" height="14.982" style="fill:#fff;"/>
+            <path d="M28.694,8.497L3.28,8.497L3.28,23.479L28.694,23.479L28.694,8.497ZM27.351,9.84L27.351,22.136C27.351,22.136 4.623,22.136 4.623,22.136C4.623,22.136 4.623,9.84 4.623,9.84L27.351,9.84Z" style="fill:#323232;"/>
+            <path d="M15.987,18.384L28.694,8.497L3.28,8.497L15.987,18.384Z" style="fill:#fff;"/>
+            <path d="M15.987,18.384L28.694,8.497L3.28,8.497L15.987,18.384ZM15.987,16.682L7.193,9.84C7.193,9.84 24.781,9.84 24.781,9.84L15.987,16.682Z" style="fill:#323232;"/>
+        </g>
+    </g>
+</svg>
