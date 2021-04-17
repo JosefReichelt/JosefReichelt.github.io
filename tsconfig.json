@@ -13,8 +13,8 @@
     "baseUrl": ".",
     "paths": {
       "_storybook/*": [".storybook/*"],
-      "_assets/*": ["src/assets/*"],
-      "_styles/*": ["src/styles/*"]
+      "_assets/*": ["./src/assets/*"],
+      "_styles/*": ["./src/styles/*"]
     },
     "rootDirs": ["src", ".storybook", "config"],
     "typeRoots": ["./src/*", "./node_modules/@types"]

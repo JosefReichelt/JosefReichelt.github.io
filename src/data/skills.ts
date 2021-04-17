@@ -8,7 +8,7 @@ export interface ISkill {
 
 export const skillsData = [
     {
-        name: 'html',
+        name: 'HTML',
         logo: htmlIcon
     }
 ];

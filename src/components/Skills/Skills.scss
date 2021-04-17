@@ -1,0 +1,11 @@
+.item {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    span {
+        margin-right: 1rem;
+    }
+    svg {
+        height: 2rem;
+    }
+}
