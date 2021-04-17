@@ -4,14 +4,12 @@ module.exports = {
         browser: true,
         es6: true
     },
-    extends: [
-        'eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:react/recommended',
-    ],
+    extends: [ 'eslint:recommended', 'plugin:@typescript-eslint/recommended' ],
     globals: {
         Atomics: 'readonly',
         SharedArrayBuffer: 'readonly'
     },
-    plugins: [ '@typescript-eslint', 'react-hooks' ],
+    plugins: [ '@typescript-eslint' ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 2018,
@@ -28,9 +26,6 @@ module.exports = {
         'no-unused-vars': 0,
         '@typescript-eslint/explicit-module-boundary-types': 0,
         '@typescript-eslint/explicit-function-return-type': 0,
-        'react/prop-types': 0,
-        'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-        'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
         '@typescript-eslint/no-empty-function': 0,
         '@typescript-eslint/no-explicit-any': 0,
         'arrow-body-style': 0,
@@ -85,6 +80,5 @@ module.exports = {
                 ]
             }
         },
-        react: { version: 'detect' }
     },
 };

@@ -1,6 +1,8 @@
 import { resolve } from 'path';
 import { RuleSetRule } from 'webpack';
-import { ASSETS_PATH, PROJ_NAME } from './webpack.config';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { ASSETS_PATH, PROJ_NAME } from './constants';
+
 
 export const rules: RuleSetRule[] = [
     {
@@ -9,13 +11,13 @@ export const rules: RuleSetRule[] = [
     },
     {
         test: /[^.test]\.ts(x)?$/,
-        use: ['babel-loader', 'ts-loader' ],
+        use: [ 'babel-loader', 'ts-loader' ],
         exclude: /node_modules/
     },
     {
         test: /\.scss$/,
         use: [
-            'style-loader',
+            MiniCssExtractPlugin.loader,
             {
                 loader: 'css-loader',
                 options: {
@@ -86,5 +88,4 @@ export const rules: RuleSetRule[] = [
             },
         ]
     },
-
 ];

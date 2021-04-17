@@ -16,9 +16,9 @@ const devServerConf:WebpackDevServer.Configuration = {
 
 const DevConfig: webpack.Configuration = {
     ...BaseConfig,
-    mode:"development",
+    mode: 'development',
     devServer: devServerConf
-}
+};
 
 
 
