@@ -10,7 +10,7 @@ export const rules: RuleSetRule[] = [
         use: 'html-loader'
     },
     {
-        test: /[^.test]\.ts(x)?$/,
+        test: /^((?!test).)*.tsx?$/,
         use: [ 'babel-loader', 'ts-loader' ],
         exclude: /node_modules/
     },
@@ -65,6 +65,7 @@ export const rules: RuleSetRule[] = [
                     {
                         loader: 'svgo-loader',
                         options: {
+                            configFile: false,
                             plugins: [
                                 { removeTitle: false },
                                 { cleanupIDs: false },
