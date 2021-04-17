@@ -16,13 +16,21 @@ export const rules: RuleSetRule[] = [
     },
     {
         test: /\.scss$/,
+
         use: [
             MiniCssExtractPlugin.loader,
             {
                 loader: 'css-loader',
                 options: {
-                    importLoaders: 1,
-                    modules: { localIdentName: `${PROJ_NAME}-[local]-[hash:base64:8]` }
+                    importLoaders: 2,
+                    modules: {
+                        // enable modules only for css outside of "styles" folder
+                        auto: (resourcePath:string) => {
+                            const testRegex = new RegExp(/src[/\\]styles/);
+                            return !testRegex.test(resourcePath);
+                        },
+                        localIdentName: `${PROJ_NAME}-[local]-[hash:base64:8]`
+                    },
                 }
             },
             {
