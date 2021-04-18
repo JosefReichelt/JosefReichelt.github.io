@@ -5,7 +5,9 @@
     "main": "src/index.tsx",
     "scripts": {
         "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.ts",
+        "build:analyze": "npm run build -- --analyze",
         "dev": "webpack serve --config config/webpack.config.dev.ts",
+        "dev:analyze": "npm run dev -- --analyze",
         "start": "serve ./dist/ -l 3000",
         "version": "npm run build  && git add -A",
         "postversion": "git push && git push --tags && gh-pages -d dist -b master"
@@ -49,7 +51,10 @@
         "typescript": "^4.2.3",
         "url-loader": "^4.1.1",
         "webpack": "^4.46.0",
+        "webpack-bundle-analyzer": "^4.4.1",
         "webpack-cli": "^4.6.0",
         "webpack-dev-server": "^3.11.2"
+    },
+    "dependencies": {
     }
 }

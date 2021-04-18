@@ -12,7 +12,7 @@ process.traceDeprecation = true;
 
 
 const BaseConfig: webpack.Configuration = {
-    mode: 'development',
+    mode: 'production',
     entry: './src/index.ts',
     target: 'web',
     output: {
@@ -21,11 +21,15 @@ const BaseConfig: webpack.Configuration = {
         publicPath: '/',
     },
     resolve: {
-        alias: { '_styles': resolve(SOURCE_PATH, 'styles/') },
+
+        alias: {
+            '_styles': resolve(SOURCE_PATH, 'styles/'),
+            svelte: resolve('node_modules', 'svelte'),
+        },
         plugins: [ new TsconfigPathsPlugin() ],
         extensions: [
-            '.ts', '.tsx', '.js', '.jsx'
-        ]
+            '.ts', '.tsx', '.js', '.jsx',
+        ],
     },
     performance: { hints: false },
     stats: {
@@ -39,7 +43,7 @@ const BaseConfig: webpack.Configuration = {
     module: { rules: rules },
     plugins: plugins(),
     optimization: {
-        minimize: false,
+        minimize: true,
         minimizer: [ new TerserPlugin() ],
         splitChunks: {
             cacheGroups: {

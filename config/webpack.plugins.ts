@@ -1,10 +1,11 @@
 import { resolve } from 'path';
 import { WebpackPluginInstance } from 'webpack';
+import BundleAnalyzer from 'webpack-bundle-analyzer/';
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import SpriteLoaderPlugin from 'svg-sprite-loader/plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
-import { PUBLIC_PATH } from './constants';
+import { PUBLIC_PATH, IS_ANALYZE } from './constants';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 
@@ -19,5 +20,8 @@ export const plugins = (): WebpackPluginInstance[] => {
         }),
         new MiniCssExtractPlugin(),
     ];
+    if (IS_ANALYZE){
+        plugins.push( new BundleAnalyzer.BundleAnalyzerPlugin() );
+    }
     return plugins;
 };
