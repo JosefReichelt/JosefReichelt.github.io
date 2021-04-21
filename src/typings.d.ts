@@ -27,8 +27,3 @@ declare module '*.html' {
     const htmlString: string;
     export default htmlString;
 }
-
-// declare module '*.svelte' {
-//     import { SvelteComponentDev } from 'svelte/internal';
-//     export default SvelteComponentDev;
-// }
