@@ -1,0 +1,4 @@
+@use "sass:color";
+
+$textWhiteBase: hsl(0, 0%, 95%);
+$textWhiteBaseTransparent: color.adjust($textWhiteBase, $alpha: -0.8);

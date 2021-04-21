@@ -1,29 +1,38 @@
 import css from './Skills.scss';
-import { skillsData } from '../../data/skills';
+import { ISkill, webSkillsData } from '../../data/skills';
 
-
-const createSkillItems = () => {
-    return skillsData.map(skill=>{
-        const skillElement = document.createElement('div');
+const createSkillsList = (skills:ISkill[]) => {
+    const list = document.createElement('ul');
+    list.className = css.list;
+    skills.forEach(skill=>{
+        const skillElement = document.createElement('li');
         skillElement.className = css.item;
         skillElement.innerHTML = `
-        <span>
-        ${skill.name}
-        </span>
-        <svg viewBox="${skill.logo.viewBox}">
-            <use href=${skill.logo.url} />
+        <svg viewBox="${skill.logo.viewBox}" class=${css.icon}>
+        <use href=${skill.logo.url} />
         </svg>
+        <span class=${css.name}>${skill.name}</span>
     `;
-        return skillElement;
+        list.appendChild(skillElement);
     });
+    return list;
 };
 
 class Skills extends HTMLElement{
     constructor() {
         super();
-        createSkillItems().forEach((item)=>{
-            this.appendChild(item);
-        });
+        const section = document.createElement('section');
+        const title = document.createElement('h2');
+        const content = document.createElement('div');
+        content.className = css.content;
+        title.innerText = 'dovednosti';
+        title.className = 'sectionTitle';
+        section.appendChild(title);
+        content.appendChild(createSkillsList(webSkillsData));
+        content.appendChild(createSkillsList(webSkillsData));
+        content.appendChild(createSkillsList(webSkillsData));
+        section.appendChild(content);
+        this.appendChild(section);
     }
 }
 

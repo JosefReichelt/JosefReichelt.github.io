@@ -1,11 +1,51 @@
+@use '_styles/colors';
+
+jr-skills {
+    width: 100%;
+
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+    .list:last-child {
+        border: none;
+    }
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    list-style: none;
+    padding: 0 10rem;
+    border-right: 3px solid colors.$textWhiteBaseTransparent;
+}
+
 .item {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     font-size: 1.4rem;
-    span {
-        margin-right: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    transition: transform 0.2s ease-out;
+    cursor: default;
+
+    &:hover {
+        cursor: default;
+        transform: scale(1.05);
     }
-    svg {
-        height: 2rem;
-    }
+}
+
+.name {
+    margin-right: 1rem;
+    text-align: right;
+    flex-grow: 1;
+}
+
+.icon {
+    height: 2rem;
+    margin-right: 1rem;
 }
