@@ -11,7 +11,7 @@ const linksData = [
         icon: emailIcon,
     },
     {
-        url: 'https://github.com/roborytir',
+        url: 'https://github.com/josefreichelt',
         name: 'Github',
         icon: githubIcon,
     },
