@@ -23,18 +23,17 @@ const createSkillsList = (skills:ISkill[]) => {
 class Skills extends HTMLElement{
     constructor() {
         super();
-        const section = document.createElement('section');
         const title = document.createElement('h2');
         const content = document.createElement('div');
+        this.className = 'sectionBlock';
         content.className = css.content;
         title.innerText = 'dovednosti';
         title.className = 'sectionTitle';
-        section.appendChild(title);
+        this.appendChild(title);
         content.appendChild(createSkillsList(webSkillsData));
         content.appendChild(createSkillsList(toolsSkills));
         content.appendChild(createSkillsList(softwareSkills));
-        section.appendChild(content);
-        this.appendChild(section);
+        this.appendChild(content);
     }
 }
 
