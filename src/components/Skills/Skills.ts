@@ -1,5 +1,7 @@
 import css from './Skills.scss';
-import { ISkill, webSkillsData } from '../../data/skills';
+import {
+    ISkill, webSkillsData, softwareSkills, toolsSkills
+} from '../../data/skills';
 
 const createSkillsList = (skills:ISkill[]) => {
     const list = document.createElement('ul');
@@ -29,8 +31,8 @@ class Skills extends HTMLElement{
         title.className = 'sectionTitle';
         section.appendChild(title);
         content.appendChild(createSkillsList(webSkillsData));
-        content.appendChild(createSkillsList(webSkillsData));
-        content.appendChild(createSkillsList(webSkillsData));
+        content.appendChild(createSkillsList(toolsSkills));
+        content.appendChild(createSkillsList(softwareSkills));
         section.appendChild(content);
         this.appendChild(section);
     }

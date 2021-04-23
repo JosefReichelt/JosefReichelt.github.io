@@ -71,6 +71,7 @@ export const rules: RuleSetRule[] = [
                                 { cleanupIDs: false },
                                 { removeStyleElement: false },
                                 { removeUselessStrokeAndFill: false },
+                                { mergePaths: false },
                             ]
                         }
                     },
