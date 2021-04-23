@@ -9,8 +9,6 @@ const devServerConf:WebpackDevServer.Configuration = {
     open: false,
     watchContentBase: true,
     hot: true,
-    quiet: true,
-    clientLogLevel: 'silent',
 
 };
 
