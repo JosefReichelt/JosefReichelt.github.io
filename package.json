@@ -5,6 +5,7 @@
     "main": "src/index.tsx",
     "scripts": {
         "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.ts",
+        "build:dev": "webpack --config config/webpack.config.dev.ts",
         "build:analyze": "npm run build -- --analyze",
         "dev": "webpack serve --config config/webpack.config.dev.ts",
         "dev:analyze": "npm run dev -- --analyze",

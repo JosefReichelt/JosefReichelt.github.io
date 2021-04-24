@@ -53,9 +53,9 @@ export const rules: RuleSetRule[] = [
                                 const path = svgpath.replace(/\\/g, '/');
                                 const fileName = path.match(/(?<=assets\/).*(?=\/)/);
                                 if (fileName && fileName[0]) {
-                                    return `/sprites/${fileName[0]}-sprite.svg`;
+                                    return `/${fileName[0]}-sprite-[hash:base64:8].svg`;
                                 }
-                                return '/sprites/assets-sprite.svg';
+                                return '/assets-sprite-[hash:base64:8].svg';
                             },
                             extract: true,
                             outputPath: ASSETS_PATH,
@@ -83,15 +83,14 @@ export const rules: RuleSetRule[] = [
                     loader: 'file-loader',
                     options: {
                         outputPath: ASSETS_PATH,
-                        publicPath: ASSETS_PATH,
                         name: (resourcePath: string) => {
                             const path = resourcePath.replace(/\\/g, '/');
-                            const fileName = path.match(/(?<=assets\/).*$/);
+                            const fileName = path.match(/(?<=assets\/).*(?=\/)/);
                             if (fileName && fileName[0]) {
                                 // eslint-disable-next-line max-len
-                                return `[folder]/${fileName[0].slice(0, fileName[0].lastIndexOf('.'))}-[hash:base64:8].[ext]`;
+                                return `${fileName[0].slice(0, fileName[0].lastIndexOf('.'))}-[hash:base64:8].[ext]`;
                             }
-                            return '[folder]/[name]-[hash:base64:8].[ext]';
+                            return '[name]-[hash:base64:8].[ext]';
                         }
                     }
                 }
