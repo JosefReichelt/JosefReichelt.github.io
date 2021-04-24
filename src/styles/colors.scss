@@ -2,6 +2,7 @@
 
 $textWhiteBase: hsl(0, 0%, 95%);
 $textWhiteBaseTransparent: color.adjust($textWhiteBase, $alpha: -0.8);
+$textGreyBase: hsl(0, 0%, 50%);
 
 $link: hsl(215, 72%, 64%);
 $linkHover: color.adjust($link, $saturation: +10%, $lightness: +5%);

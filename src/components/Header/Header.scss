@@ -1,0 +1,44 @@
+@use '_styles/colors';
+
+jr-header {
+    margin-top: 5rem;
+}
+
+.titleSection {
+    display: flex;
+    align-items: center;
+
+}
+
+.nameSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.photo {
+    height: 12.8rem;
+    width: 12.8rem;
+    border-radius: 100%;
+}
+
+.info {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+    text-align: justify;
+    max-width: 80ch;
+}
+
+.name {
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.motto {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: colors.$textGreyBase;
+    font-weight: lighter;
+}
