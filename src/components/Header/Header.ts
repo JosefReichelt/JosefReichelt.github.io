@@ -1,5 +1,6 @@
 import css from './Header.scss';
 import photoImg from '_assets/photo.jpg';
+import { calculateAge } from 'src/utils/ageCalc';
 
 class Header extends HTMLElement {
     constructor() {
@@ -20,8 +21,8 @@ class Header extends HTMLElement {
 
         name.innerText = 'Josef Reichelt';
         motto.innerText = 'web master, designer, game developer';
-        // eslint-disable-next-line max-len
-        info.innerText = 'Ahoj, já jsem Pepa, je mi 28 let a jsem nadšenec do vývoje webovek, software a her. Specializuji na vývoj front-end aplikací a to primárně za použití Reactu, Typescriptu a Less. Zabývám se ale i jinými technologiemi jako je Rust.';
+        // eslint-disable-next-line function-paren-newline, max-len
+        info.innerText = `Ahoj, já jsem Pepa, je mi ${calculateAge(new Date(1992, 7, 27))} let a jsem nadšenec do vývoje webovek, software a her. Specializuji na vývoj front-end aplikací a to primárně za použití Reactu, Typescriptu a Less. Zabývám se ale i jinými technologiemi jako je Rust.`;
         photo.src = photoImg;
 
         nameSection.appendChild(name);
