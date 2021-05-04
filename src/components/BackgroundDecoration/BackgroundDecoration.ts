@@ -34,7 +34,8 @@ class BackgroundDecoration extends HTMLElement {
 
     handleResize() {
         this.totalHeight = Math.max(document.body.scrollHeight, 1920);
-        this.totalWidth = Math.max(window.innerWidth, 1920);
+        this.totalWidth = Math.max(document.body.scrollWidth, 1920);
+        this.style.height = `${this.totalHeight}px`;
         this.calculateBlocks();
     }
 
