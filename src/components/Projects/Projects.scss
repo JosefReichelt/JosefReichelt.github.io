@@ -1,0 +1,52 @@
+@use '_styles/colors';
+
+jr-projects {
+    width: 100%;
+}
+
+.projectList {
+    width: 100%;
+    list-style: none;
+}
+
+.entry {
+    margin-bottom: 2rem;
+
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        width: 10rem;
+        height: 10rem;
+        object-fit: cover;
+        border-radius: 0.8rem;
+    }
+}
+
+.content {
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+    flex-grow: 1;
+
+    p {
+        font-size: 1.4rem;
+        flex-grow: 1;
+    }
+}
+
+.usedTechList {
+    text-align: right;
+    line-height: 2.2rem;
+}
+
+.techItem {
+    margin: 0 1rem;
+    color: colors.$textGreyBase;
+}

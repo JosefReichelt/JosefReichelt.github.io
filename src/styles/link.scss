@@ -1,0 +1,16 @@
+@use '_styles/colors';
+
+a {
+    font-size: 2rem;
+    color: colors.$link;
+    text-decoration: none;
+    transition: color 0.25s ease-out;
+
+    &:visited {
+        color: colors.$link;
+    }
+
+    &:hover {
+        color: colors.$linkHover;
+    }
+}
