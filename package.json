@@ -11,6 +11,7 @@
         "dev:analyze": "npm run dev -- --analyze",
         "version": "npm run build  && git add -A",
         "postversion": "git push && git push --tags && gh-pages -d dist -b master",
+        "publish": "npm run build && gh-pages -d dist -b master",
         "lint": "eslint \"**/*.?(t|j)?(s|sx)\" -c ./.eslintrc.js",
         "lint:fix": "eslint --fix \"**/*.?(t|j)?(s|sx)\" -c ./.eslintrc.js",
         "start": "serve ./dist/ -l 3000"
