@@ -1,6 +1,6 @@
 {
     "name": "jrsite",
-    "version": "3.0.0",
+    "version": "3.1.0",
     "description": "My portfolio site",
     "main": "src/index.tsx",
     "scripts": {
