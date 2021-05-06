@@ -60,7 +60,7 @@ class BackgroundDecoration extends HTMLElement {
             element.style.height = `${this.blockHeight}px`;
             element.style.marginTop = `${this.isoTopMargin}px`;
             element.style.top = `-${this.blockPadding}px`;
-            element.style.backgroundColor = `rgba(255,255,255,${1 / (this.numOfBlocks / i)})`;
+            element.style.backgroundColor = `rgba(255,255,255,${0.5 / (this.numOfBlocks / i)})`;
             element.className = css.backgroundSection;
             this.appendChild(element);
         }

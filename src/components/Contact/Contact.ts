@@ -25,6 +25,7 @@ class Contact extends HTMLElement {
         link.href = 'mailto:pepareichelt@gmail.com';
 
         const linkedInLink = document.createElement('a');
+        linkedInLink.title = 'LinkedIn Odkaz';
         linkedInLink.href = 'https://www.linkedin.com/in/josefreichelt';
         const linkedin = new Sprite(
             linkedInLogo, 6, 6

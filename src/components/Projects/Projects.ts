@@ -17,6 +17,7 @@ const createProjectEntry = (project: IProject) => {
     usedTechList.className = css.usedTechList;
 
     projectImage.src = project.image;
+    projectImage.alt = `${project.name} screenshot`;
     descriptionText.innerText = project.desc;
     projectTitle.innerText = project.name;
 
@@ -24,7 +25,7 @@ const createProjectEntry = (project: IProject) => {
     projectEntry.appendChild(content);
     content.appendChild(projectImage);
     for (const tech of project.tech){
-        const techItem = document.createElement('span');
+        const techItem = document.createElement('li');
         techItem.innerText = tech;
         techItem.className = css.techItem;
 

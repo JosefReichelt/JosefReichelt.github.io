@@ -42,8 +42,10 @@ jr-projects {
 }
 
 .usedTechList {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
     line-height: 2.2rem;
+    list-style: none;
 }
 
 .techItem {

@@ -9,12 +9,13 @@ class Header extends HTMLElement {
         const nameSection = document.createElement('div');
         const photo = document.createElement('img');
         const name = document.createElement('h1');
-        const motto = document.createElement('h3');
+        const motto = document.createElement('h2');
         const info = document.createElement('p');
 
         titleSection.className = css.titleSection;
         nameSection.className = css.nameSection;
         photo.className = css.photo;
+        photo.alt = 'Profilovka Josefa Reichelta';
         name.className = css.name;
         motto.className = css.motto;
         info.className = css.info;
@@ -22,7 +23,7 @@ class Header extends HTMLElement {
         name.innerText = 'Josef Reichelt';
         motto.innerText = 'web master, designer, game developer';
         // eslint-disable-next-line function-paren-newline, max-len
-        info.innerText = `Ahoj, já jsem Pepa, je mi ${calculateAge(new Date(1992, 7, 27))} let a jsem nadšenec do vývoje webovek, software a her. Specializuji na vývoj front-end aplikací a to primárně za použití Reactu, Typescriptu a Less. Zabývám se ale i jinými technologiemi jako je Rust.`;
+        info.innerText = `Ahoj, já jsem Pepa, je mi ${calculateAge(new Date(1992, 7, 27))} let a jsem nadšenec do vývoje webovek, software a her. Specializuji na vývoj front-end aplikací a to primárně za použití Reactu, Typescriptu a Less.`;
         photo.src = photoImg;
 
         nameSection.appendChild(name);
