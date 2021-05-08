@@ -1,0 +1,16 @@
+{
+    "name": "JosefReichelt",
+    "short_name": "JosefReicheltWeb",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "hsl(0, 0%, 5%)",
+    "description": "Osovbni web Josefa Reichelta.",
+    "theme_color": "#23235c",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
